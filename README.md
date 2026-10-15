@@ -1,15 +1,18 @@
 # a11y-flow
 
-Auditoria local de HTML para encontrar problemas comuns de nomes acessíveis, formulários, ARIA, foco de teclado e hierarquia de títulos. O conteúdo analisado fica no navegador.
+Check HTML for common accessibility issues, including missing labels, invalid ARIA references, keyboard focus problems, and heading structure. The audit runs in your browser; HTML is not uploaded to a server.
 
-## Executar
+## Run locally
 
-Requer Node.js 20.19 ou superior.
+Requires Node.js 20.19 or later.
 
-1. Execute **npm install**.
-2. Execute **npm run dev** e abra o endereço exibido.
-3. Cole o HTML ou carregue um arquivo e selecione **Analisar HTML**.
+```sh
+npm install
+npm run dev
+```
 
-**npm test** executa os testes das regras e **npm run build** gera a versão estática em dist/.
+Open the local URL printed by Vite, paste HTML or choose a file, and select **Analyze HTML**.
 
-A auditoria é uma verificação inicial de marcação; valide também a interface real com teclado e tecnologia assistiva.
+Run `npm test` for the rule tests or `npm run build` to create the static app in `dist/`.
+
+This is a markup check, not a substitute for testing the finished interface with a keyboard and assistive technology.
